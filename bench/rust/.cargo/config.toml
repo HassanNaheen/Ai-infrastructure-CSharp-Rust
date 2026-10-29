@@ -1,0 +1,3 @@
+# Same rule as the C# side's IlcInstructionSet=native: use every instruction the host CPU has.
+[build]
+rustflags = ["-C", "target-cpu=native"]

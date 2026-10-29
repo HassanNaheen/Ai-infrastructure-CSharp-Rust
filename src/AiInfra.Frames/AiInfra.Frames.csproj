@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Skeleton only; implementation starts in its roadmap milestone (docs/08-roadmap.md). -->
+  <ItemGroup>
+    <ProjectReference Include="../AiInfra.Core/AiInfra.Core.csproj" />
+  </ItemGroup>
+</Project>

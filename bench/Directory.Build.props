@@ -1,0 +1,8 @@
+<Project>
+  <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+  <!-- Benchmarks only: let Native AOT use every instruction the host CPU has, matching the Rust
+       side's -C target-cpu=native (docs/07-benchmarking.md). The JIT does this by default. -->
+  <PropertyGroup>
+    <IlcInstructionSet>native</IlcInstructionSet>
+  </PropertyGroup>
+</Project>

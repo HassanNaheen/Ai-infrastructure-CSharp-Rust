@@ -1,0 +1,12 @@
+bin/
+obj/
+*.user
+.vs/
+.idea/
+BenchmarkDotNet.Artifacts/
+bench/rust/target/
+bench/datasets/data/
+TestResults/
+.DS_Store
+.bdn/
+bench/results/

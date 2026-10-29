@@ -1,0 +1,9 @@
+# Rust comparators for the C# benchmarks (docs/07-benchmarking.md).
+[workspace]
+members = ["core-bench"]
+resolver = "3"
+
+[profile.bench]
+lto = "fat"
+codegen-units = 1
+debug = false

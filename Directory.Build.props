@@ -1,0 +1,20 @@
+<Project>
+  <!-- Shared settings for every project. See docs/00-principles.md. -->
+  <PropertyGroup>
+    <TargetFramework>net11.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <TieredPGO>true</TieredPGO>
+    <Deterministic>true</Deterministic>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <PropertyGroup Condition="$([MSBuild]::IsOSPlatform('OSX'))">
+    <!-- Native AOT otherwise runs `xcodebuild -version`, which writes an error to stderr on machines
+         with only the Command Line Tools; BenchmarkDotNet then treats the AOT build as failed.
+         The Command Line Tools ship the modern linker, so the classic-linker fallback is never wanted. -->
+    <UseLdClassicXCodeLinker>false</UseLdClassicXCodeLinker>
+  </PropertyGroup>
+</Project>

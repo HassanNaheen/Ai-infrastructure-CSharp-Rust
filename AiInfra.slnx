@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/AiInfra.Core/AiInfra.Core.csproj" />
+    <Project Path="src/AiInfra.Tokenizers/AiInfra.Tokenizers.csproj" />
+    <Project Path="src/AiInfra.Validation/AiInfra.Validation.csproj" />
+    <Project Path="src/AiInfra.Frames/AiInfra.Frames.csproj" />
+    <Project Path="src/AiInfra.Pkg/AiInfra.Pkg.csproj" />
+    <Project Path="src/AiInfra.Pkg.Cli/AiInfra.Pkg.Cli.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/AiInfra.Core.Tests/AiInfra.Core.Tests.csproj" />
+  </Folder>
+  <Folder Name="/bench/">
+    <Project Path="bench/AiInfra.Benchmarks/AiInfra.Benchmarks.csproj" />
+  </Folder>
+</Solution>
